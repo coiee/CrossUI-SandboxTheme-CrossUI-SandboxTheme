@@ -12,3 +12,4 @@ let package = Package(
             name: "CoinGecko",
             targets: ["CoinGecko"]),
     ],
+    dependencies: [
