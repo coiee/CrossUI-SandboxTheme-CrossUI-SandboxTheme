@@ -24,3 +24,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "CoinGeckoTests",
+            dependencies: ["CoinGecko"]),
+    ]
+)
