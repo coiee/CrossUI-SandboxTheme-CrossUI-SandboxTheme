@@ -11,3 +11,7 @@ import Foundation
 public typealias Callback<T> = (Result<T, CoinGeckoError>) -> Void
 
 let CustomKeyUserInfoKey = CodingUserInfoKey(rawValue: "customKey")!
+
+public struct Resource<T: Codable> {
+    
+    fileprivate let endpoint: Endpoint
