@@ -20,3 +20,6 @@ public struct Resource<T: Codable> {
     fileprivate let params: [URLQueryItem]?
     fileprivate let parse: ((Data) -> T)? //optional parse function if Data isn't directly decodable to T
     fileprivate let customKey: String?
+    fileprivate let completion: (Result<T, CoinGeckoError>) -> Void //called on main thread
+    
+    public init(_ endpoint: Endpoint,
