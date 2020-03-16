@@ -15,3 +15,8 @@ let CustomKeyUserInfoKey = CodingUserInfoKey(rawValue: "customKey")!
 public struct Resource<T: Codable> {
     
     fileprivate let endpoint: Endpoint
+    fileprivate let method: Method
+    fileprivate let pathParam: String?
+    fileprivate let params: [URLQueryItem]?
+    fileprivate let parse: ((Data) -> T)? //optional parse function if Data isn't directly decodable to T
+    fileprivate let customKey: String?
