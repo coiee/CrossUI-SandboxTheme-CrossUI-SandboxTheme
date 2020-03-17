@@ -23,3 +23,9 @@ public struct Resource<T: Codable> {
     fileprivate let completion: (Result<T, CoinGeckoError>) -> Void //called on main thread
     
     public init(_ endpoint: Endpoint,
+         method: Method,
+         pathParam: String? = nil,
+         params: [URLQueryItem]? = nil,
+         parse: ((Data) -> T)? = nil,
+         customKey: String? = nil,
+         completion: @escaping (Result<T, CoinGeckoError>) -> Void) {
