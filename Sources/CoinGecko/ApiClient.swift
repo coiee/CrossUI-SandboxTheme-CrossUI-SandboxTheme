@@ -29,3 +29,8 @@ public struct Resource<T: Codable> {
          parse: ((Data) -> T)? = nil,
          customKey: String? = nil,
          completion: @escaping (Result<T, CoinGeckoError>) -> Void) {
+        self.endpoint = endpoint
+        self.method = method
+        self.pathParam = pathParam
+        self.params = params
+        self.parse = parse
