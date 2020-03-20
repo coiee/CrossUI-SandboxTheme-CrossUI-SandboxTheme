@@ -40,3 +40,9 @@ public struct Resource<T: Codable> {
 }
 
 public enum Method: String {
+    case GET
+}
+
+public enum CoinGeckoError: Error {
+    case general
+    case noData
