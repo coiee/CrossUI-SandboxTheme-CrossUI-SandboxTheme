@@ -34,3 +34,9 @@ public struct Resource<T: Codable> {
         self.pathParam = pathParam
         self.params = params
         self.parse = parse
+        self.customKey = customKey
+        self.completion = completion
+    }
+}
+
+public enum Method: String {
