@@ -46,3 +46,10 @@ public enum Method: String {
 public enum CoinGeckoError: Error {
     case general
     case noData
+    case jsonDecoding
+}
+
+public class CoinGeckoClient {
+        
+    public init() {}
+    
