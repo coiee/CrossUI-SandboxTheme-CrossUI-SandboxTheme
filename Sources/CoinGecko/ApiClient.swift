@@ -53,3 +53,7 @@ public class CoinGeckoClient {
         
     public init() {}
     
+    private let baseURL = "https://api.coingecko.com/api/v3"
+    
+    public func load<T: Codable>(_ resource: Resource<T>) {
+        let completion = resource.completion
