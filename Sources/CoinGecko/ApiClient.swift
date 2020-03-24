@@ -59,3 +59,6 @@ public class CoinGeckoClient {
         let completion = resource.completion
         var path = resource.endpoint.rawValue
         path = resource.pathParam == nil ? path : String(format: path, resource.pathParam!)
+        var url = URL(string: "\(baseURL)\(path)")!
+        if let params = resource.params {
+            var comps = URLComponents(url: url, resolvingAgainstBaseURL: true)!
