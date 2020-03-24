@@ -57,3 +57,5 @@ public class CoinGeckoClient {
     
     public func load<T: Codable>(_ resource: Resource<T>) {
         let completion = resource.completion
+        var path = resource.endpoint.rawValue
+        path = resource.pathParam == nil ? path : String(format: path, resource.pathParam!)
