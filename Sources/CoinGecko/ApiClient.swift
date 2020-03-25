@@ -65,3 +65,6 @@ public class CoinGeckoClient {
             comps.queryItems = comps.queryItems ?? []
             comps.queryItems!.append(contentsOf: params)
             url = comps.url!
+        }
+        var request = URLRequest(url: url)
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
