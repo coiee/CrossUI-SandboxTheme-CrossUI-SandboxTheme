@@ -62,3 +62,6 @@ public class CoinGeckoClient {
         var url = URL(string: "\(baseURL)\(path)")!
         if let params = resource.params {
             var comps = URLComponents(url: url, resolvingAgainstBaseURL: true)!
+            comps.queryItems = comps.queryItems ?? []
+            comps.queryItems!.append(contentsOf: params)
+            url = comps.url!
