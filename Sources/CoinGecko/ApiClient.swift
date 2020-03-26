@@ -68,3 +68,9 @@ public class CoinGeckoClient {
         }
         var request = URLRequest(url: url)
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else { completion(.failure(.noData)); return }
+            do {
+                var result: T
+                if let parse = resource.parse {
+                    result = parse(data)
