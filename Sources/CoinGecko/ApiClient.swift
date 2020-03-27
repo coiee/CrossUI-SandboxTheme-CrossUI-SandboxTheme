@@ -74,3 +74,8 @@ public class CoinGeckoClient {
                 var result: T
                 if let parse = resource.parse {
                     result = parse(data)
+                } else {
+                    let decoder = JSONDecoder()
+                    if let customKey = resource.customKey {
+                        decoder.userInfo = [CustomKeyUserInfoKey: customKey]
+                    }
