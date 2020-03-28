@@ -88,3 +88,7 @@ public class CoinGeckoClient {
                 print("JSON parsing error: \(e)")
                 DispatchQueue.main.async {
                     completion(.failure(.general))
+                }
+            }
+        }.resume()
+    }
