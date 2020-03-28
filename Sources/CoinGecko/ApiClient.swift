@@ -79,3 +79,12 @@ public class CoinGeckoClient {
                     if let customKey = resource.customKey {
                         decoder.userInfo = [CustomKeyUserInfoKey: customKey]
                     }
+                    result = try decoder.decode(T.self, from: data)
+                }
+                DispatchQueue.main.async {
+                    completion(.success(result))
+                }
+            } catch let e {
+                print("JSON parsing error: \(e)")
+                DispatchQueue.main.async {
+                    completion(.failure(.general))
