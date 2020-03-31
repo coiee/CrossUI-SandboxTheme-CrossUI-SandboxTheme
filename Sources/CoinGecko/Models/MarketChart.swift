@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+public struct MarketChart: Codable {
+    public let prices: [[Double]]
+}
