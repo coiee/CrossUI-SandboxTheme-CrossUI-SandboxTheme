@@ -18,3 +18,5 @@ extension MarketChart {
             guard $0.count == 2 else { return nil }
             return PriceDataPoint(timestamp: Int($0[0]), price: $0[1])
         }
+    }
+}
