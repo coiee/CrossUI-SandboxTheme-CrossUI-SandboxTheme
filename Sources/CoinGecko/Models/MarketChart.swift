@@ -20,3 +20,8 @@ extension MarketChart {
         }
     }
 }
+
+public struct PriceDataPoint: Codable {
+    public let timestamp: Int
+    public let price: Double
+}
