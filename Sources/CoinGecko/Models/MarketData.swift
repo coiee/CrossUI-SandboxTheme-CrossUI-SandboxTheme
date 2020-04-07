@@ -17,3 +17,8 @@ public struct MarketContainer: Codable {
     
     private let market_data: MarketData
 }
+
+public struct MarketData: Codable {
+    
+    public let marketCap: Double
+    public let totalVolume: Double
