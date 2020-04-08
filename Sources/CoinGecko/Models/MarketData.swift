@@ -22,3 +22,8 @@ public struct MarketData: Codable {
     
     public let marketCap: Double
     public let totalVolume: Double
+    public let high24h: Double
+    public let low24h: Double
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: DynamicCodingKeys.self)
