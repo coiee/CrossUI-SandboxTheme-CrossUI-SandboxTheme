@@ -31,3 +31,6 @@ public struct MarketData: Codable {
         self.marketCap = try extractDouble(container: container, key1: "market_cap", key2: customKey)
         self.totalVolume = try extractDouble(container: container, key1: "total_volume", key2: customKey)
         self.high24h = try extractDouble(container: container, key1: "high_24h", key2: customKey)
+        self.low24h = try extractDouble(container: container, key1: "low_24h", key2: customKey)
+    }
+}
