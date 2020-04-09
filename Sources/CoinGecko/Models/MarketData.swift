@@ -34,3 +34,11 @@ public struct MarketData: Codable {
         self.low24h = try extractDouble(container: container, key1: "low_24h", key2: customKey)
     }
 }
+
+private func extractDouble(container: KeyedDecodingContainer<DynamicCodingKeys>, key1: String, key2: String) throws -> Double {
+    var result: Double?
+    try container.allKeys.forEach {
+        if $0.stringValue == key1 {
+            let x = try container.nestedContainer(keyedBy: DynamicCodingKeys.self, forKey: $0)
+            try x.allKeys.forEach {
+                if $0.stringValue == key2 {
