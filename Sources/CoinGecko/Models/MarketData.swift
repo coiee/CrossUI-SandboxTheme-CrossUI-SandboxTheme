@@ -46,3 +46,7 @@ private func extractDouble(container: KeyedDecodingContainer<DynamicCodingKeys>,
                 }
             }
         }
+    }
+    guard let r = result else { throw CoinGeckoError.jsonDecoding }
+    return r
+}
