@@ -42,3 +42,7 @@ private func extractDouble(container: KeyedDecodingContainer<DynamicCodingKeys>,
             let x = try container.nestedContainer(keyedBy: DynamicCodingKeys.self, forKey: $0)
             try x.allKeys.forEach {
                 if $0.stringValue == key2 {
+                    result = try x.decode(Double.self, forKey: $0)
+                }
+            }
+        }
