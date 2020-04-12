@@ -56,3 +56,6 @@ struct DynamicCodingKeys: CodingKey {
     init?(stringValue: String) {
         self.stringValue = stringValue
     }
+    
+    var intValue: Int?
+    init?(intValue: Int) {
