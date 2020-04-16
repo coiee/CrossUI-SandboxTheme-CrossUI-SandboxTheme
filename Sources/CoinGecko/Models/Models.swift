@@ -7,3 +7,6 @@
 //
 
 import Foundation
+
+typealias SupportedList = [String]
+typealias CoinList = [Coin]
