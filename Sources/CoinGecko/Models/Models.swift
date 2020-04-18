@@ -17,3 +17,10 @@ public struct Pong: Codable {
 
 public struct Coin: Codable {
     let id: String
+    let symbol: String
+    let name: String
+}
+
+
+public enum CoinGeckoCodes {
+    public static let map = ["BTC" : "bitcoin",
