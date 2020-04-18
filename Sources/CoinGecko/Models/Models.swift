@@ -14,3 +14,6 @@ typealias CoinList = [Coin]
 public struct Pong: Codable {
     let gecko_says: String
 }
+
+public struct Coin: Codable {
+    let id: String
