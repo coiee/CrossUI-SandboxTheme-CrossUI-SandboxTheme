@@ -24,3 +24,9 @@ public struct Coin: Codable {
 
 public enum CoinGeckoCodes {
     public static let map = ["BTC" : "bitcoin",
+    "BCH" : "bitcoin-cash",
+    "ETH" : "ethereum",
+    "HBAR" : "hedera-hashgraph",
+    "XRP" : "ripple",
+    "1ST" : "first-blood",
+    "ABT" : "arcblock",
