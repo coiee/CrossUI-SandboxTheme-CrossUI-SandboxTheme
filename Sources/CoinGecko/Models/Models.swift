@@ -36,3 +36,8 @@ public enum CoinGeckoCodes {
     "AGI" : "singularitynet",
     "AION" : "aion",
     "AMB" : "amber",
+    "AMLT" : "coinfirm-amlt",
+    "ANT" : "aragon",
+    "APPC" : "appcoins",
+    "ARN" : "aeron",
+    "ATMI" : "atonomi",
