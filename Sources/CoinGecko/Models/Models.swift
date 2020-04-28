@@ -48,3 +48,7 @@ public enum CoinGeckoCodes {
     "BNT" : "bancor",
     "BRD" : "bread",
     "BTM" : "bytom",
+    "CAS" : "cashaa",
+    "CFI" : "cofound-it",
+    "CMT" : "cybermiles",
+    "CND" : "cindicator",
