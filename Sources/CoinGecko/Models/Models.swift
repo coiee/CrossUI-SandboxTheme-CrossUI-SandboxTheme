@@ -58,3 +58,6 @@ public enum CoinGeckoCodes {
     "CSP" : "caspian",
     "CVC" : "civic",
     "DAI" : "dai",
+    "DENT" : "dent",
+    "DGD" : "digixdao",
+    "DNT" : "district0x",
