@@ -67,3 +67,7 @@ public enum CoinGeckoCodes {
     "EDO" : "eidoo",
     "ELF" : "aelf",
     "ENG" : "enigma",
+    "ENJ" : "enjincoin",
+    "EOS" : "eos",
+    "FSN" : "fsn",
+    "FUN" : "funfair",
