@@ -77,3 +77,6 @@ public enum CoinGeckoCodes {
     "GNT" : "golem",
     "GNX" : "genaro-network",
     "GTO" : "gifto",
+    "GUP" : "matchpool",
+    "GUSD" : "gemini-dollar",
+    "GVT" : "genesis-vision",
