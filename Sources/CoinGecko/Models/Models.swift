@@ -94,3 +94,8 @@ public enum CoinGeckoCodes {
     "LOOM" : "loom-network",
     "LRC" : "loopring",
     "LUN" : "lunyr",
+    "MAN" : "matrix-ai-network",
+    "MANA" : "decentraland",
+    "MCO" : "monaco",
+    "MKR" : "maker",
+    "MTL" : "metal",
