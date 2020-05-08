@@ -99,3 +99,8 @@ public enum CoinGeckoCodes {
     "MCO" : "monaco",
     "MKR" : "maker",
     "MTL" : "metal",
+    "MYST" : "mysterium",
+    "NAS" : "nebulas",
+    "NEXO" : "nexo",
+    "NMR" : "numeraire",
+    "NPXS" : "pundi-x",
