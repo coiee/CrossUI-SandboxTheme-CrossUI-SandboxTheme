@@ -104,3 +104,6 @@ public enum CoinGeckoCodes {
     "NEXO" : "nexo",
     "NMR" : "numeraire",
     "NPXS" : "pundi-x",
+    "NULS" : "nuls",
+    "OMG" : "omisego",
+    "OST" : "simple-token",
