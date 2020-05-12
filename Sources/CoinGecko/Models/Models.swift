@@ -110,3 +110,6 @@ public enum CoinGeckoCodes {
     "OXT" : "orchid-protocol",
     "PAL" : "policypal",
     "PAX" : "paxos-standard",
+    "PAY" : "tenx",
+    "POE" : "poet",
+    "POLY" : "polymath-network",
