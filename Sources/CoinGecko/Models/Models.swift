@@ -107,3 +107,6 @@ public enum CoinGeckoCodes {
     "NULS" : "nuls",
     "OMG" : "omisego",
     "OST" : "simple-token",
+    "OXT" : "orchid-protocol",
+    "PAL" : "policypal",
+    "PAX" : "paxos-standard",
