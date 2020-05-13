@@ -122,3 +122,8 @@ public enum CoinGeckoCodes {
     "RCC" : "reality-clash",
     "RCN" : "ripio-credit-network",
     "RDN" : "raiden-network",
+    "REP" : "augur",
+    "REQ" : "request-network",
+    "REV" : "revain",
+    "RLC" : "iexec-rlc",
+    "RUFF" : "ruff",
