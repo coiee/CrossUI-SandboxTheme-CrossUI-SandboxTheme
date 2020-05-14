@@ -129,3 +129,6 @@ public enum CoinGeckoCodes {
     "RUFF" : "ruff",
     "RVT" : "rivetz",
     "SAI" : "sai",
+    "SALT" : "salt",
+    "SAN" : "santiment-network-token",
+    "SENT" : "sentinel-group",
