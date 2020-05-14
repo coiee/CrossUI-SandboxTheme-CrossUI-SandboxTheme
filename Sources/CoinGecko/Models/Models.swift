@@ -127,3 +127,5 @@ public enum CoinGeckoCodes {
     "REV" : "revain",
     "RLC" : "iexec-rlc",
     "RUFF" : "ruff",
+    "RVT" : "rivetz",
+    "SAI" : "sai",
