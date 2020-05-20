@@ -132,3 +132,8 @@ public enum CoinGeckoCodes {
     "SALT" : "salt",
     "SAN" : "santiment-network-token",
     "SENT" : "sentinel-group",
+    "SNC" : "suncontract",
+    "SNGLS" : "singulardtv",
+    "SNM" : "sonm",
+    "SNT" : "status",
+    "SRN" : "sirin-labs-token",
