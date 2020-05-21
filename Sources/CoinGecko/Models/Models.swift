@@ -143,3 +143,6 @@ public enum CoinGeckoCodes {
     "STQ" : "storiqa",
     "STU" : "bitjob",
     "STX" : "stox",
+    "SUB" : "substratum",
+    "TEL" : "telcoin",
+    "THETA" : "theta-token",
