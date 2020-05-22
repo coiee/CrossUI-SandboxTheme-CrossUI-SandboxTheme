@@ -146,3 +146,6 @@ public enum CoinGeckoCodes {
     "SUB" : "substratum",
     "TEL" : "telcoin",
     "THETA" : "theta-token",
+    "TIME" : "chronobank",
+    "TRX" : "tron",
+    "TUSD" : "true-usd",
