@@ -149,3 +149,8 @@ public enum CoinGeckoCodes {
     "TIME" : "chronobank",
     "TRX" : "tron",
     "TUSD" : "true-usd",
+    "UCASH" : "ucash",
+    "USDC" : "usd-coin",
+    "VEE" : "blockv",
+    "VGX" : "ethos",
+    "VIB" : "viberate",
