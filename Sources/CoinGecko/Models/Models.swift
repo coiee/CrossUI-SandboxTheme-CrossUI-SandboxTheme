@@ -154,3 +154,7 @@ public enum CoinGeckoCodes {
     "VEE" : "blockv",
     "VGX" : "ethos",
     "VIB" : "viberate",
+    "WINGS" : "wings",
+    "WPR" : "wepower",
+    "WRC" : "worldcore",
+    "WTC" : "waltonchain",
