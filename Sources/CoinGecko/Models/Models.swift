@@ -158,3 +158,5 @@ public enum CoinGeckoCodes {
     "WPR" : "wepower",
     "WRC" : "worldcore",
     "WTC" : "waltonchain",
+    "XUC" : "exchange-union",
+    "ZIL" : "zilliqa",
