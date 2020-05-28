@@ -160,3 +160,7 @@ public enum CoinGeckoCodes {
     "WTC" : "waltonchain",
     "XUC" : "exchange-union",
     "ZIL" : "zilliqa",
+    "ZLA" : "zilla",
+    "ZRX" : "0x",
+    "NCASH" : "nucleus-vision",
+    "BAT": "basic-attention-token",
