@@ -164,3 +164,7 @@ public enum CoinGeckoCodes {
     "ZRX" : "0x",
     "NCASH" : "nucleus-vision",
     "BAT": "basic-attention-token",
+    "GD": "chainzilla",
+    "STORM": "stormx",
+    "WAX": "wax",
+    "USDT20": "tether"
