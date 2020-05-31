@@ -168,3 +168,6 @@ public enum CoinGeckoCodes {
     "STORM": "stormx",
     "WAX": "wax",
     "USDT20": "tether"
+    ]
+
+}
