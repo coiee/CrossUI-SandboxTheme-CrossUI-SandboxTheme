@@ -2,4 +2,4 @@
 //  SimplePrice.swift
 //  
 //
-//  Created by Adrian
+//  Created by Adrian Corscad
