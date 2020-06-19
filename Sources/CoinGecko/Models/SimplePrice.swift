@@ -7,4 +7,4 @@
 
 import Foundation
 
-public typeal
+public typealias 
