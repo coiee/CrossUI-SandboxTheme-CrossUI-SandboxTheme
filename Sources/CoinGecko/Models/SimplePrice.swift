@@ -7,4 +7,4 @@
 
 import Foundation
 
-public t
+public typeal
