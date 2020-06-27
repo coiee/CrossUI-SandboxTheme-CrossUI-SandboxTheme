@@ -7,4 +7,4 @@
 
 import Foundation
 
-public typealias PriceList = [SimplePrice
+public typealias PriceList = [SimplePrice]
