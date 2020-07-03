@@ -9,4 +9,4 @@ import Foundation
 
 public typealias PriceList = [SimplePrice]
 
-public struct S
+public struct Simple
