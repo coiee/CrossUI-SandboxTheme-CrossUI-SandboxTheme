@@ -9,4 +9,4 @@ import Foundation
 
 public typealias PriceList = [SimplePrice]
 
-public struct SimplePrice: C
+public struct SimplePrice: Codabl
