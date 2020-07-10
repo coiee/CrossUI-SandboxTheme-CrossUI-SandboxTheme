@@ -10,4 +10,4 @@ import Foundation
 public typealias PriceList = [SimplePrice]
 
 public struct SimplePrice: Codable {
-    public let id: S
+    public let id: St
