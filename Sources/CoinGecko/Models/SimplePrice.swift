@@ -11,4 +11,4 @@ public typealias PriceList = [SimplePrice]
 
 public struct SimplePrice: Codable {
     public let id: String
-    public 
+    public let pri
