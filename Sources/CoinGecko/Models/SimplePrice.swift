@@ -12,4 +12,4 @@ public typealias PriceList = [SimplePrice]
 public struct SimplePrice: Codable {
     public let id: String
     public let price: Double
-    public let marketCap
+    public let marketCap: D
