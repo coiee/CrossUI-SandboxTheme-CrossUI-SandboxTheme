@@ -14,4 +14,4 @@ public struct SimplePrice: Codable {
     public let price: Double
     public let marketCap: Double?
     public let vol24hr: Double?
-    public let change24h
+    public let change24hr: D
