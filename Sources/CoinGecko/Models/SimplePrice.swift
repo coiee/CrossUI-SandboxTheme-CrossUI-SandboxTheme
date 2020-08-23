@@ -17,4 +17,4 @@ public struct SimplePrice: Codable {
     public let change24hr: Double?
     public let lastUpdatedAt: Int?
     
-    init?(js
+    init?(json: [S
