@@ -18,4 +18,4 @@ public struct SimplePrice: Codable {
     public let lastUpdatedAt: Int?
     
     init?(json: [String: Any], id: String, prefix: String) {
-   
+        
