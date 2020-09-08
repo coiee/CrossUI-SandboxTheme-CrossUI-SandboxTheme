@@ -20,3 +20,4 @@ public struct SimplePrice: Codable {
     init?(json: [String: Any], id: String, prefix: String) {
         
         self.id = id
+  
