@@ -21,3 +21,4 @@ public struct SimplePrice: Codable {
         
         self.id = id
         
+      
