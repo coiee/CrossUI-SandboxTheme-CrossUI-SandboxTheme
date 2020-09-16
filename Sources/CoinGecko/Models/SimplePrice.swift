@@ -21,4 +21,4 @@ public struct SimplePrice: Codable {
         
         self.id = id
         
-        //no
+        //non-opt
