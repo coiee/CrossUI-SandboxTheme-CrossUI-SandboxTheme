@@ -21,4 +21,5 @@ public struct SimplePrice: Codable {
         
         self.id = id
         
-        //non-optiona
+        //non-optional
+     
