@@ -22,4 +22,4 @@ public struct SimplePrice: Codable {
         self.id = id
         
         //non-optional
-        guard let price = json["\(prefix)"] as? Double el
+        guard let price = json["\(prefix)"] as? Double else {
