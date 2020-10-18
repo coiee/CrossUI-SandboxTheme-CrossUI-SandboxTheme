@@ -26,4 +26,4 @@ public struct SimplePrice: Codable {
         self.price = price
         
         //optionals
-    
+        s
