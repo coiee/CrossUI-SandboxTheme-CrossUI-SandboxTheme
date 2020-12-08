@@ -26,4 +26,4 @@ public struct SimplePrice: Codable {
         self.price = price
         
         //optionals
-        self.marketCap = json["\(p
+        self.marketCap = json["\(pre
