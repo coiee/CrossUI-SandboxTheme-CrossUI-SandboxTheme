@@ -32,3 +32,5 @@ public struct SimplePrice: Codable {
         self.lastUpdatedAt = json["last_updated_at"] as? Int
     }
 }
+
+publi
