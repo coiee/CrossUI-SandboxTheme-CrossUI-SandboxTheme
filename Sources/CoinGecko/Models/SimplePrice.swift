@@ -30,4 +30,5 @@ public struct SimplePrice: Codable {
         self.vol24hr = json["\(prefix)_24h_vol"] as? Double
         self.change24hr = json["\(prefix)_24h_change"] as? Double
         self.lastUpdatedAt = json["last_updated_at"] as? Int
-    
+    }
+}
