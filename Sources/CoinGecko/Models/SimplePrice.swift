@@ -33,4 +33,4 @@ public struct SimplePrice: Codable {
     }
 }
 
-public enum Simp
+public enum SimplePric
