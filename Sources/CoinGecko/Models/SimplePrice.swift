@@ -33,4 +33,4 @@ public struct SimplePrice: Codable {
     }
 }
 
-public enum SimplePriceOptions: Case
+public enum SimplePriceOptions: CaseIterab
