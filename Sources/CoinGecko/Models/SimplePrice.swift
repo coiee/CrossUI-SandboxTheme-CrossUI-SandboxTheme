@@ -36,4 +36,4 @@ public struct SimplePrice: Codable {
 public enum SimplePriceOptions: CaseIterable {
     case marketCap
     case vol
-    case 
+    case change
