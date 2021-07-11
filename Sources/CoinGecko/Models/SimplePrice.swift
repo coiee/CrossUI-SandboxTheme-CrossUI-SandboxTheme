@@ -37,4 +37,7 @@ public enum SimplePriceOptions: CaseIterable {
     case marketCap
     case vol
     case change
-    case lastUpda
+    case lastUpdated
+}
+
+str
