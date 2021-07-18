@@ -40,4 +40,4 @@ public enum SimplePriceOptions: CaseIterable {
     case lastUpdated
 }
 
-struct SimplePriceParams: 
+struct SimplePriceParams: Codabl
