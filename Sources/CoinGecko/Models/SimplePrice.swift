@@ -41,4 +41,5 @@ public enum SimplePriceOptions: CaseIterable {
 }
 
 struct SimplePriceParams: Codable {
-    let ids: [String
+    let ids: [String]
+   
