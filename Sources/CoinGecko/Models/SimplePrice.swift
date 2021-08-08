@@ -44,4 +44,4 @@ struct SimplePriceParams: Codable {
     let ids: [String]
     let vsCurrency: String
     let includeMarketCap: Bool
- 
+   
