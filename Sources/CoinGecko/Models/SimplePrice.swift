@@ -46,4 +46,4 @@ struct SimplePriceParams: Codable {
     let includeMarketCap: Bool
     let include24hrVol: Bool
     let include24hrChange: Bool
- 
+    le
