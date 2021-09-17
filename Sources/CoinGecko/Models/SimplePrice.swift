@@ -47,4 +47,5 @@ struct SimplePriceParams: Codable {
     let include24hrVol: Bool
     let include24hrChange: Bool
     let includeLastUpdatedAt: Bool
- 
+    
+    
