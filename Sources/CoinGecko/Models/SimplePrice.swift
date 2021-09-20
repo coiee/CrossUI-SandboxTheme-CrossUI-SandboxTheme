@@ -48,4 +48,4 @@ struct SimplePriceParams: Codable {
     let include24hrChange: Bool
     let includeLastUpdatedAt: Bool
     
-    enum CodingKeys: String, Codin
+    enum CodingKeys: String, CodingKey
