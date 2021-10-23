@@ -49,4 +49,5 @@ struct SimplePriceParams: Codable {
     let includeLastUpdatedAt: Bool
     
     enum CodingKeys: String, CodingKey {
-        case ids, includeMarketCap, includeLastUpdate
+        case ids, includeMarketCap, includeLastUpdatedAt
+ 
