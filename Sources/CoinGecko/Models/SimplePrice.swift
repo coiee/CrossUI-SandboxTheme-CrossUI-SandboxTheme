@@ -50,4 +50,5 @@ struct SimplePriceParams: Codable {
     
     enum CodingKeys: String, CodingKey {
         case ids, includeMarketCap, includeLastUpdatedAt
-        case vsCurrency = "vs_currencies
+        case vsCurrency = "vs_currencies"
+   
