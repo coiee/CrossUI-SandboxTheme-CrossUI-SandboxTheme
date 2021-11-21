@@ -52,4 +52,4 @@ struct SimplePriceParams: Codable {
         case ids, includeMarketCap, includeLastUpdatedAt
         case vsCurrency = "vs_currencies"
         case include24hrVol = "include_24hr_vol"
-        case inc
+        case include24hr
