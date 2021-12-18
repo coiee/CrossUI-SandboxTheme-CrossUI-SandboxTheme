@@ -56,4 +56,4 @@ struct SimplePriceParams: Codable {
     }
 }
 
-extension Si
+extension SimpleP
