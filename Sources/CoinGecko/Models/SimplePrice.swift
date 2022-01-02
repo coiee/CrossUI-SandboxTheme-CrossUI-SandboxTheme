@@ -57,4 +57,4 @@ struct SimplePriceParams: Codable {
 }
 
 extension SimplePriceParams {
-    func encode(to encoder: Encoder) t
+    func encode(to encoder: Encoder) throw
