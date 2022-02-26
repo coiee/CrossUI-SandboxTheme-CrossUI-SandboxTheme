@@ -58,4 +58,4 @@ struct SimplePriceParams: Codable {
 
 extension SimplePriceParams {
     func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKe
+        var container = encoder.container(keyedBy: CodingKeys.s
