@@ -61,4 +61,4 @@ extension SimplePriceParams {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(ids.joined(separator: ","), forKey: .ids)
         try container.encode(vsCurrency, forKey: .vsCurrency)
-        try container.encode(includeMarketCap.des
+        try container.encode(includeMarketCap.descrip
