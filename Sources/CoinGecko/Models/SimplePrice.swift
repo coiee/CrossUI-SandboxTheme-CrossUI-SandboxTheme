@@ -62,4 +62,4 @@ extension SimplePriceParams {
         try container.encode(ids.joined(separator: ","), forKey: .ids)
         try container.encode(vsCurrency, forKey: .vsCurrency)
         try container.encode(includeMarketCap.description, forKey: .includeMarketCap)
-        t
+        try conta
