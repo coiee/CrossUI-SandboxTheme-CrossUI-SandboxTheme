@@ -64,4 +64,4 @@ extension SimplePriceParams {
         try container.encode(includeMarketCap.description, forKey: .includeMarketCap)
         try container.encode(include24hrVol.description, forKey: .include24hrVol)
         try container.encode(include24hrChange.description, forKey: .include24hrChange)
-        try container.encode(includeLastUpdat
+        try container.encode(includeLastUpdatedAt
