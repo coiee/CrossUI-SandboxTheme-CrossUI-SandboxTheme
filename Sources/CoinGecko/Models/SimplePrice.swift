@@ -67,4 +67,4 @@ extension SimplePriceParams {
         try container.encode(includeLastUpdatedAt.description, forKey: .includeLastUpdatedAt)
     }
     
-    func queryItems(
+    func queryItems() 
