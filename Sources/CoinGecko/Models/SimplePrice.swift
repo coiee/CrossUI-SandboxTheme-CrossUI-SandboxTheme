@@ -68,4 +68,4 @@ extension SimplePriceParams {
     }
     
     func queryItems() -> [URLQueryItem] {
-        let encoder = JSON
+        let encoder = JSONEnc
