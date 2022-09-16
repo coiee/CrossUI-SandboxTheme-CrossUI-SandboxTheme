@@ -70,4 +70,4 @@ extension SimplePriceParams {
     func queryItems() -> [URLQueryItem] {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
-        guard let dat
+        guard let data = 
