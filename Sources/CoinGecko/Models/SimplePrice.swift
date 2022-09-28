@@ -71,4 +71,4 @@ extension SimplePriceParams {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
         guard let data = try? encoder.encode(self) else { fatalError() }
-        guard let dic
+        guard let dict = t
