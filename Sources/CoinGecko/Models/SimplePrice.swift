@@ -72,4 +72,4 @@ extension SimplePriceParams {
         encoder.keyEncodingStrategy = .convertToSnakeCase
         guard let data = try? encoder.encode(self) else { fatalError() }
         guard let dict = try? JSONSerialization.jsonObject(with: data, options: []) else { fatalError() }
-        return (di
+        return (dict
