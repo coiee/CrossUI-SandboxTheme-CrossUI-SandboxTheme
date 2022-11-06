@@ -73,3 +73,4 @@ extension SimplePriceParams {
         guard let data = try? encoder.encode(self) else { fatalError() }
         guard let dict = try? JSONSerialization.jsonObject(with: data, options: []) else { fatalError() }
         return (dict as! [String: String]).map { URLQueryItem(name: $0, value: $1) }
+  
