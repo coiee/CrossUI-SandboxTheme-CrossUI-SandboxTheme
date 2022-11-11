@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+public enum Endpoint: String {
+    case ping = "/ping"
+    
+    case supportedVs = "/simple/supported_vs_currencies"
