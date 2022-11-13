@@ -18,3 +18,5 @@ public enum Endpoint: String {
     case coinsMarketChart = "/coins/%@/market_chart"
     case coin = "/coins/%@"
 }
+
+public enum Resources {}
