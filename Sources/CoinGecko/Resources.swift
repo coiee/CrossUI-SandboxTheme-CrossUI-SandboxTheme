@@ -20,3 +20,5 @@ public enum Endpoint: String {
 }
 
 public enum Resources {}
+
+// MARK: - Ping
