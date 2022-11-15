@@ -22,3 +22,5 @@ public enum Endpoint: String {
 public enum Resources {}
 
 // MARK: - Ping
+extension Resources {
+    public static func ping<Pong>(_ callback: @escaping Callback<Pong>) -> Resource<Pong> {
