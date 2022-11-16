@@ -24,3 +24,9 @@ public enum Resources {}
 // MARK: - Ping
 extension Resources {
     public static func ping<Pong>(_ callback: @escaping Callback<Pong>) -> Resource<Pong> {
+        return Resource(.ping, method: .GET, completion: callback)
+    }
+}
+
+// MARK: - Simple
+extension Resources {
