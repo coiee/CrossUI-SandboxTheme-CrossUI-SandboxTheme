@@ -30,3 +30,8 @@ extension Resources {
 
 // MARK: - Simple
 extension Resources {
+    public static func simplePrice<PriceList>(ids: [String], vsCurrency: String, options: [SimplePriceOptions], _ callback: @escaping Callback<PriceList>) -> Resource<PriceList> {
+        let params = SimplePriceParams(ids: ids,
+                                       vsCurrency: vsCurrency,
+                                       includeMarketCap: options.contains(.marketCap),
+                                       include24hrVol: options.contains(.vol),
