@@ -35,3 +35,5 @@ extension Resources {
                                        vsCurrency: vsCurrency,
                                        includeMarketCap: options.contains(.marketCap),
                                        include24hrVol: options.contains(.vol),
+                                       include24hrChange: options.contains(.change),
+                                       includeLastUpdatedAt: options.contains(.lastUpdated))
