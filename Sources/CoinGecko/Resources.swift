@@ -37,3 +37,7 @@ extension Resources {
                                        include24hrVol: options.contains(.vol),
                                        include24hrChange: options.contains(.change),
                                        includeLastUpdatedAt: options.contains(.lastUpdated))
+        let parse: (Data) -> PriceList = { data in
+            var result = [SimplePrice]()
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
