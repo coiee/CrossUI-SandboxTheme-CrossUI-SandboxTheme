@@ -45,3 +45,5 @@ extension Resources {
                     guard let item = json?[id] as? [String: Any] else { print("item not found"); return }
                     if let price = SimplePrice(json: item, id: id, prefix: vsCurrency) {
                         result.append(price)
+                    }
+                }
