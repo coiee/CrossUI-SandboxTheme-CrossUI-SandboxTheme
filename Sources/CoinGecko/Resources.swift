@@ -41,3 +41,7 @@ extension Resources {
             var result = [SimplePrice]()
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                params.ids.forEach { id in
+                    guard let item = json?[id] as? [String: Any] else { print("item not found"); return }
+                    if let price = SimplePrice(json: item, id: id, prefix: vsCurrency) {
+                        result.append(price)
