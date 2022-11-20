@@ -47,3 +47,8 @@ extension Resources {
                         result.append(price)
                     }
                 }
+            } catch let e {
+                print("json error: \(e)")
+            }
+            return result as! PriceList
+        }
