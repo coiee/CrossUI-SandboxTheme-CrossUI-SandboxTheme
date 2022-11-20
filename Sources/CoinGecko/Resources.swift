@@ -52,3 +52,4 @@ extension Resources {
             }
             return result as! PriceList
         }
+        return Resource(.simplePrice, method: .GET, params: params.queryItems(), parse: parse, completion: callback)
