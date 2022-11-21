@@ -53,3 +53,9 @@ extension Resources {
             return result as! PriceList
         }
         return Resource(.simplePrice, method: .GET, params: params.queryItems(), parse: parse, completion: callback)
+    }
+    
+    public static func supported<SupportedList>(_ callback: @escaping Callback<SupportedList>) -> Resource<SupportedList> {
+        return Resource(.supportedVs, method: .GET, completion: callback)
+    }
+}
