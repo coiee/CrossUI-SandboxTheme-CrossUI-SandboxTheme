@@ -59,3 +59,6 @@ extension Resources {
         return Resource(.supportedVs, method: .GET, completion: callback)
     }
 }
+
+// MARK: - Coins
+extension Resources {
