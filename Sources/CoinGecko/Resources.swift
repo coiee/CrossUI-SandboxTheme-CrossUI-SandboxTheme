@@ -62,3 +62,8 @@ extension Resources {
 
 // MARK: - Coins
 extension Resources {
+    
+    public static func coin<CoinResponse>(currencyId: String, vs: String,
+                               _ callback: @escaping (Result<CoinResponse, CoinGeckoError>) -> Void) -> Resource<CoinResponse>{
+        let params = [URLQueryItem(name: "market_data", value: "true"),
+                      URLQueryItem(name: "localization", value: "false"),
