@@ -67,3 +67,8 @@ extension Resources {
                                _ callback: @escaping (Result<CoinResponse, CoinGeckoError>) -> Void) -> Resource<CoinResponse>{
         let params = [URLQueryItem(name: "market_data", value: "true"),
                       URLQueryItem(name: "localization", value: "false"),
+                      URLQueryItem(name: "tickers", value: "false"),
+                      URLQueryItem(name: "community_data", value: "false"),
+                      URLQueryItem(name: "developer_data", value: "false")]
+        return Resource(.coin, method: .GET, pathParam: currencyId, params: params, customKey: vs, completion: callback)
+    }
