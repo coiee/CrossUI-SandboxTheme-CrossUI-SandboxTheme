@@ -72,3 +72,6 @@ extension Resources {
                       URLQueryItem(name: "developer_data", value: "false")]
         return Resource(.coin, method: .GET, pathParam: currencyId, params: params, customKey: vs, completion: callback)
     }
+    
+    public static func coins<CoinList>(_ callback: @escaping Callback<CoinList>) -> Resource<CoinList> {
+        return Resource(.coinsList, method: .GET, completion: callback)
