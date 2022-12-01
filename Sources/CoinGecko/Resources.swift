@@ -75,3 +75,9 @@ extension Resources {
     
     public static func coins<CoinList>(_ callback: @escaping Callback<CoinList>) -> Resource<CoinList> {
         return Resource(.coinsList, method: .GET, completion: callback)
+    }
+    
+    public static func marketChart<MarketChart>(currencyId: String, vs: String, days: Int, callback: @escaping Callback<MarketChart>) -> Resource<MarketChart> {
+        let params = [URLQueryItem(name: "vs_currency", value: vs),
+                      URLQueryItem(name: "days", value: "\(days)")]
+        return Resource(.coinsMarketChart, method: .GET, pathParam: currencyId, params: params, completion: callback)
