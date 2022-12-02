@@ -81,3 +81,5 @@ extension Resources {
         let params = [URLQueryItem(name: "vs_currency", value: vs),
                       URLQueryItem(name: "days", value: "\(days)")]
         return Resource(.coinsMarketChart, method: .GET, pathParam: currencyId, params: params, completion: callback)
+    }
+}
