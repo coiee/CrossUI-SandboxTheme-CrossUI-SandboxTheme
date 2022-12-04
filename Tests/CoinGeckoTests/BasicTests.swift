@@ -10,3 +10,9 @@ final class BasicTests: XCTestCase {
         let exp = XCTestExpectation()
         let ping = Resources.ping { (result: Result<Pong, CoinGeckoError>) in
             guard case .success(let pong) = result else { XCTFail(); exp.fulfill(); return }
+            XCTAssertTrue(pong.gecko_says == "(V3) To the Moon!")
+            exp.fulfill()
+        }
+        client.load(ping)
+        wait(for: [exp], timeout: 10.0)
+    }
