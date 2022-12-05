@@ -20,3 +20,12 @@ final class BasicTests: XCTestCase {
     func testSupported() {
         let exp = XCTestExpectation()
         let supported = Resources.supported { (result: Result<SupportedList, CoinGeckoError>) in
+            guard case .success(let supported) = result else { XCTFail(); exp.fulfill(); return }
+            XCTAssertTrue(supported.count > 0)
+            XCTAssertTrue(supported.contains(where: { $0 == "cad" }))
+            exp.fulfill()
+        }
+        client.load(supported)
+        wait(for: [exp], timeout: 10.0)
+    }
+    
