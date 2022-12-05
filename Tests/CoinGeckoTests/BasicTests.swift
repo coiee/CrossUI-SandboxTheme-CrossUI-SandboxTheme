@@ -16,3 +16,7 @@ final class BasicTests: XCTestCase {
         client.load(ping)
         wait(for: [exp], timeout: 10.0)
     }
+    
+    func testSupported() {
+        let exp = XCTestExpectation()
+        let supported = Resources.supported { (result: Result<SupportedList, CoinGeckoError>) in
