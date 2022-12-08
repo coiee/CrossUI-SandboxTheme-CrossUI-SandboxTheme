@@ -10,3 +10,7 @@ import XCTest
 @testable import CoinGecko
 
 final class CoinTests: XCTestCase {
+
+    private let client = CoinGeckoClient()
+    
+    func testListCoins() {
