@@ -14,3 +14,8 @@ final class CoinTests: XCTestCase {
     private let client = CoinGeckoClient()
     
     func testListCoins() {
+        let exp = XCTestExpectation()
+        let coins = Resources.coins { (result: Result<CoinList, CoinGeckoError>) in
+            guard case .success(let supported) = result else { XCTFail(); exp.fulfill(); return }
+            XCTAssertTrue(supported.count > 0)
+            XCTAssertTrue(supported.contains(where: { $0.symbol == "btc" }))
