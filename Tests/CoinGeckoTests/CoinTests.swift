@@ -19,3 +19,6 @@ final class CoinTests: XCTestCase {
             guard case .success(let supported) = result else { XCTFail(); exp.fulfill(); return }
             XCTAssertTrue(supported.count > 0)
             XCTAssertTrue(supported.contains(where: { $0.symbol == "btc" }))
+            exp.fulfill()
+        }
+        client.load(coins)
