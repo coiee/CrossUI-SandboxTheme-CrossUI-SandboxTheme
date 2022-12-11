@@ -29,3 +29,5 @@ final class CoinTests: XCTestCase {
         let exp = XCTestExpectation()
         let chart = Resources.marketChart(currencyId: "bitcoin", vs: "cad", days: 30) { (result: Result<MarketChart, CoinGeckoError>) in
             guard case .success(let data) = result else { XCTFail(); exp.fulfill(); return }
+            XCTAssert(data.prices.count > 0, "Prices shouldn't be empty")
+            exp.fulfill()
