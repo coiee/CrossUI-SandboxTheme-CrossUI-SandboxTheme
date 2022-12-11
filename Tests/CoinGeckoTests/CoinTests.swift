@@ -22,3 +22,10 @@ final class CoinTests: XCTestCase {
             exp.fulfill()
         }
         client.load(coins)
+        wait(for: [exp], timeout: 10.0)
+    }
+    
+    func testMarketCharts() {
+        let exp = XCTestExpectation()
+        let chart = Resources.marketChart(currencyId: "bitcoin", vs: "cad", days: 30) { (result: Result<MarketChart, CoinGeckoError>) in
+            guard case .success(let data) = result else { XCTFail(); exp.fulfill(); return }
