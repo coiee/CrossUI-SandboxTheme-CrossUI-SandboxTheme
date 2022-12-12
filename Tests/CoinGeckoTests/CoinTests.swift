@@ -31,3 +31,6 @@ final class CoinTests: XCTestCase {
             guard case .success(let data) = result else { XCTFail(); exp.fulfill(); return }
             XCTAssert(data.prices.count > 0, "Prices shouldn't be empty")
             exp.fulfill()
+        }
+        client.load(chart)
+        wait(for: [exp], timeout: 10.0)
