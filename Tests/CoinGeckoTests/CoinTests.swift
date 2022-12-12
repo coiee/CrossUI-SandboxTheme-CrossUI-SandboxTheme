@@ -34,3 +34,6 @@ final class CoinTests: XCTestCase {
         }
         client.load(chart)
         wait(for: [exp], timeout: 10.0)
+    }
+    
+    func testMarketData() {
