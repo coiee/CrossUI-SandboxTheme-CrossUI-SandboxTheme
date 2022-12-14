@@ -37,3 +37,7 @@ final class CoinTests: XCTestCase {
     }
     
     func testMarketData() {
+        let exp = XCTestExpectation()
+        let marketData = Resources.coin(currencyId: "bitcoin", vs: "cad") { (result: Result<MarketContainer, CoinGeckoError>) in
+            guard case .success(let data) = result else { XCTFail(); exp.fulfill(); return }
+            XCTAssert(data.marketCap > 0)
