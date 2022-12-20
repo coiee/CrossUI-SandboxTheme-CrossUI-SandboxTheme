@@ -17,3 +17,7 @@ final class SimpleTests: XCTestCase {
             XCTAssert(first.id == "bitcoin", "")
             XCTAssert(first.change24hr != nil, "Change 24hr should not be nil")
             XCTAssert(first.lastUpdatedAt != nil, "Last Updated At should not be nil")
+            XCTAssert(first.marketCap != nil, "Market Cap should not be nil")
+            XCTAssert(first.vol24hr != nil, "Vol should not be nil")
+            
+            exp.fulfill()
