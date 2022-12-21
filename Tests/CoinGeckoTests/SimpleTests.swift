@@ -21,3 +21,10 @@ final class SimpleTests: XCTestCase {
             XCTAssert(first.vol24hr != nil, "Vol should not be nil")
             
             exp.fulfill()
+        }
+        client.load(price)
+        wait(for: [exp], timeout: 10.0)
+    }
+    
+    func testIncludeNone() {
+        let exp = XCTestExpectation()
