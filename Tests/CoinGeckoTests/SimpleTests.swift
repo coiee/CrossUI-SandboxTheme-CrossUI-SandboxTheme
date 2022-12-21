@@ -28,3 +28,8 @@ final class SimpleTests: XCTestCase {
     
     func testIncludeNone() {
         let exp = XCTestExpectation()
+        let ids = ["bitcoin"]
+        let vsCurrency = "cad"
+        let price = Resources.simplePrice(ids: ids, vsCurrency: vsCurrency, options: []) { (result: Result<PriceList, CoinGeckoError>) in
+            guard case .success(let prices) = result else { XCTFail(); exp.fulfill(); return }
+            guard let first = prices.first else { XCTFail("Prices should not be empty"); exp.fulfill(); return }
