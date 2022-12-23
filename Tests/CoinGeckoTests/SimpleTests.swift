@@ -45,3 +45,7 @@ final class SimpleTests: XCTestCase {
         wait(for: [exp], timeout: 10.0)
     }
     
+    func testChange() {
+        let exp = XCTestExpectation()
+        let ids = ["bitcoin"]
+        let vsCurrency = "cad"
