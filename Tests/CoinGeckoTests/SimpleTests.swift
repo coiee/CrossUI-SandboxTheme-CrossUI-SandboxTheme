@@ -52,3 +52,9 @@ final class SimpleTests: XCTestCase {
         let price = Resources.simplePrice(ids: ids, vsCurrency: vsCurrency, options: [.change]) { (result: Result<PriceList, CoinGeckoError>) in
             guard case .success(let prices) = result else { XCTFail(); exp.fulfill(); return }
             guard let first = prices.first else { XCTFail("Prices should not be empty"); exp.fulfill(); return }
+            
+            XCTAssert(first.change24hr != nil, "Change 24hr should not be nil")
+            XCTAssert(first.lastUpdatedAt == nil, "Last Updated At should be nil")
+            XCTAssert(first.marketCap == nil, "Market Cap should be nil")
+            XCTAssert(first.vol24hr == nil, "Vol should be nil")
+            
