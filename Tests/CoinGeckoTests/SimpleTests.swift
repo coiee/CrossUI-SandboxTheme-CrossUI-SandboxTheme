@@ -58,3 +58,8 @@ final class SimpleTests: XCTestCase {
             XCTAssert(first.marketCap == nil, "Market Cap should be nil")
             XCTAssert(first.vol24hr == nil, "Vol should be nil")
             
+            exp.fulfill()
+        }
+        client.load(price)
+        wait(for: [exp], timeout: 10.0)
+    }
