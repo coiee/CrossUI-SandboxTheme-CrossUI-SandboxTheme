@@ -63,3 +63,5 @@ final class SimpleTests: XCTestCase {
         client.load(price)
         wait(for: [exp], timeout: 10.0)
     }
+
+}
