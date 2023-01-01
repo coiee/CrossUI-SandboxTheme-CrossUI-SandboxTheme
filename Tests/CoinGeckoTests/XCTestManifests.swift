@@ -1,3 +1,3 @@
 import XCTest
 
-#if
+#if !can
