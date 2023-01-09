@@ -1,3 +1,3 @@
 import XCTest
 
-#if !canImport(Objectiv
+#if !canImport(ObjectiveC)
