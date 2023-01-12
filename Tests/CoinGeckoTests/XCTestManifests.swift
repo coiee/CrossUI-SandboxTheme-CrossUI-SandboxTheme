@@ -1,4 +1,4 @@
 import XCTest
 
 #if !canImport(ObjectiveC)
-public func 
+public func allTe
