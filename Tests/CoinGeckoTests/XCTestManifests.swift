@@ -4,4 +4,4 @@ import XCTest
 public func allTests() -> [XCTestCaseEntry] {
     return [
         testCase(CoinGeckoTests.allTests),
-   
+    ]
