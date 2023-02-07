@@ -5,3 +5,5 @@ public func allTests() -> [XCTestCaseEntry] {
     return [
         testCase(CoinGeckoTests.allTests),
     ]
+}
+#en
