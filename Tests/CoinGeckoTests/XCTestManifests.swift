@@ -6,4 +6,4 @@ public func allTests() -> [XCTestCaseEntry] {
         testCase(CoinGeckoTests.allTests),
     ]
 }
-#en
+#end
