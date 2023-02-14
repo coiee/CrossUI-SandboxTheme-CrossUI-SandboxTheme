@@ -1,3 +1,3 @@
 import XCTest
 
-import C
+import CoinGe
