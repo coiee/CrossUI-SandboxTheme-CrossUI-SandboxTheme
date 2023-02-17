@@ -1,3 +1,3 @@
 import XCTest
 
-import CoinGe
+import CoinGeckoTe
