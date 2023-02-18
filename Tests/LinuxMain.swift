@@ -1,3 +1,5 @@
 import XCTest
 
-import CoinGeckoTe
+import CoinGeckoTests
+
+var t
