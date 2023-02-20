@@ -2,4 +2,4 @@ import XCTest
 
 import CoinGeckoTests
 
-var tests = [X
+var tests = [XCTestC
