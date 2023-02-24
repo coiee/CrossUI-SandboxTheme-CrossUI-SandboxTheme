@@ -3,4 +3,4 @@ import XCTest
 import CoinGeckoTests
 
 var tests = [XCTestCaseEntry]()
-tests += CoinGeckoTests.a
+tests += CoinGeckoTests.all
