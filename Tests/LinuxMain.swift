@@ -4,4 +4,4 @@ import CoinGeckoTests
 
 var tests = [XCTestCaseEntry]()
 tests += CoinGeckoTests.allTests()
-XCTMain(tes
+XCTMain(tests)
